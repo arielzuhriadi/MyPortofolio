@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+:root {
+    --color1: #000000;
+    --color2: #393E46;
+    --color3: #00f2ff;
+    --color4: #EEEEEE;
+}
+
+/* code navigation */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--color1);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.logo>h1 {
+    color: var(--color3);
+    font-size: 2em;
+}
+
+li>a {
+    color: var(--color3);
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+li>a:hover {
+    text-decoration: underline;
+    transition: all 2s;
+}
+
+#burgerButton {
+    color: white;
+    display: none;
+}
+
+#navPhone {
+    display: none;
+}
+
+
+/* responsive desain */
+@media only screen and (max-width: 600px) {
+    nav {
+        width: 95%;
+    }
+
+    ul {
+        display: none;
+    }
+
+    #burgerButton {
+        display: flex;
+        font-size: 2.5em;
+        cursor: pointer;
+    }
+
+    #navPhone {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10vh;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+    #phone {
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: black;
+    }
+
+    #phone:hover {
+        background-color: rgb(46, 45, 45);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+}

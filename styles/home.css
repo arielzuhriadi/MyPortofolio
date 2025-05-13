@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+:root {
+    --color1: #000000;
+    --color2: #393E46;
+    --color3: #00f2ff;
+    --color4: #EEEEEE;
+}
+
+
+body {
+    background-color: black;
+}
+
+#content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#home {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.box-left {
+    width: 50%;
+    color: white;
+}
+
+.box-left>h1 {
+    font-size: 3em;
+}
+
+.box-left>h2 {
+    font-size: 2em;
+}
+
+.box-left>p {
+    margin-top: 2vh;
+}
+
+.SertiRes {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.SertiRes>a {
+    color: black;
+    text-decoration: none;
+    background-color: var(--color3);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.SertiRes>a:hover {
+    background-color: #00ccd7;
+    color: #EEEEEE;
+}
+
+.box-right {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.box-right>img {
+    width: 90%;
+    height: 75vh;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px;
+}
+
+
+/* responsive desain */
+@media only screen and (max-width: 600px) {
+    #content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #home {
+        flex-direction: column;
+    }
+
+    .box-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+
+    .box-left>h1 {
+        font-size: 2.5em;
+        margin-top: 5vh;
+    }
+
+    .box-left>h2 {
+        font-size: 1.5em;
+    }
+
+    .SertiRes {
+        width: 70%;
+    }
+
+    .box-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .box-right>img {
+        width: 50%;
+        height: 27vh;
+        border: 2px solid white;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {}
