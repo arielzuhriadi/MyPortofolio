@@ -1,6 +1,92 @@
-footer{
+footer {
+        background-color: rgb(46, 45, 45);
+    width: 80%;
+    margin: auto;
     margin-top: 15vh;
     padding: 20px;
     text-align: center;
     color: white;
 }
+
+.box-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lef-foot {
+    display: flex;
+    flex-direction: column;
+}
+
+.judul-foot {
+    text-align: left;
+}
+
+.nav-foot {
+    margin-top: 5vh;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.list-foot>a {
+    color: white;
+}
+
+iframe {
+    border-radius: 10px;
+    width: 70vh;
+    height: 50vh;
+}
+
+.fot-buttom {
+    margin-top: 10vh;
+}
+
+
+/* responsive desain */
+@media only screen and (max-width: 600px) {
+    footer {
+        width: 100%;
+    }
+
+    .box-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .lef-foot {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .judul-foot {
+        text-align: left;
+    }
+
+    .nav-foot {
+        margin-top: 5vh;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .list-foot>a {
+        color: white;
+    }
+
+    iframe {
+        width: 100%;
+        margin-top: 5vh;
+        height: 40vh;
+    }
+
+    .fot-buttom {
+        margin-top: 5vh;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 900px) {}
